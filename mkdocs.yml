@@ -10,11 +10,11 @@ nav:
         - Exercises: python/fundamentals/python_basics_exercises.md
       - Modules:
         - Modules: python/fundamentals/modules.md
-    # - DSA:
-    #   - Arrays:
-    #     - Arrays: python/dsa/arrays/arrays.md
-    #   - Leetcode:
-    #     - Leetcode: python/dsa/leetcode/leetcode.md
+    - DSA:
+      - Arrays:
+        - Arrays: python/dsa/arrays.md
+      - Leetcode:
+        - Leetcode: python/dsa/leetcode.md
 
 theme:
   name: material
