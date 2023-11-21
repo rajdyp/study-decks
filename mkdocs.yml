@@ -10,12 +10,16 @@ nav:
         - Exercises: python/fundamentals/python_basics_exercises.md
       - Modules:
         - Modules: python/fundamentals/modules.md
+      - Frameworks:
+        - Fast API: python/fundamentals/fast_api.md
     - DSA:
       - Arrays:
         - Arrays: python/dsa/arrays.md
       - Practice Problems:
         - Leetcode: python/dsa/leetcode.md
-
+    - Others:
+      - External Links: python/fundamentals/external_links.md
+      
 theme:
   name: material
   features:
