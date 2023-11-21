@@ -7,7 +7,8 @@ nav:
     - Fundamentals:
       - Python Basics: python/fundamentals/python_basics.md
       - Exercises: python/fundamentals/python_basics_exercises.md
-      - Modules: python/fundamentals/modules.md
+      - Modules:
+        - Modules: python/fundamentals/modules.md
     - DSA:
       - Arrays:
         - Arrays: python/dsa/arrays/arrays.md
