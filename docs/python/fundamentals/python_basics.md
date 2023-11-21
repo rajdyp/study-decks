@@ -1,6 +1,5 @@
 ## Python
 
-### 1. Primitive data structures in Python
 <details>
 <summary> Primitive data structures in Python </summary>
 ```md
