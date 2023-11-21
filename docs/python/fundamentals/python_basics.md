@@ -1,5 +1,3 @@
-## Python
-
 <details>
 <summary> Primitive data structures in Python </summary>
 ```md
