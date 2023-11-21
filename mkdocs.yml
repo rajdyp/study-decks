@@ -3,7 +3,17 @@ site_url: https://rajdyp.github.io/study-decks/
 
 nav:
   - Home: index.md
-  
+  - Python:
+    - Fundamentals:
+      - Python Basics: python_basics.md
+      - Exercises: python_basics_exercises.md
+      - Modules: modules.md
+    - DSA:
+      - Arrays:
+        - Arrays: arrays.md
+      - Leetcode:
+        - Leetcode: leetcode.md
+
 theme:
   name: material
   features:
