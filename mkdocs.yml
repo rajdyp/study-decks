@@ -13,7 +13,7 @@ nav:
     - DSA:
       - Arrays:
         - Arrays: python/dsa/arrays.md
-      - Leetcode:
+      - Practice Problems:
         - Leetcode: python/dsa/leetcode.md
 
 theme:
