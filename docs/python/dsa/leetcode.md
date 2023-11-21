@@ -1,24 +1,4 @@
-### 1. Contains duplicate
-```yaml
-Given an integer array nums, return true if any value appears at least twice in the array, and return false if every
-element is distinct.
-
-Example 1:
-Input: nums = [1,2,3,1]
-Output: true
-
-Example 2:
-Input: nums = [1,2,3,4]
-Output: false
-
-Example 3:
-Input: nums = [1,1,1,3,3,4,3,2,4,2]
-Output: true
-
-Constraints:
-- 1 <= nums.length <= 105
-- -109 <= nums[i] <= 109
-```
+### [1. Contains duplicate](https://leetcode.com/problems/contains-duplicate/)
 
 <details>
 <summary> Solution </summary>
@@ -46,24 +26,7 @@ print(containsDuplicate(nums3))
 </details>
 
 
-### 2. Valid anagram
-```yaml
-Given two strings s and t, return true if t is an anagram of s, and false otherwise.
-An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all
-the original letters exactly once.
-
-Example 1:
-Input: s = "anagram", t = "nagaram"
-Output: true
-
-Example 2:
-Input: s = "rat", t = "car"
-Output: false
- 
-Constraints:
-- 1 <= s.length, t.length <= 5 * 104
-- s and t consist of lowercase English letters.
-```
+### [2. Valid anagram](https://leetcode.com/problems/valid-anagram/)
 
 <details>
 <summary> Solution </summary>
@@ -98,31 +61,7 @@ print(is_anagram(s, t))
 </details>
 
 
-### 3. Two sum
-```yaml
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to
-target. You may assume that each input would have exactly one solution, and you may not use the same element twice.
-You can return the answer in any order.
-
-Example 1:
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
-
-Example 2:
-Input: nums = [3,2,4], target = 6
-Output: [1,2]
-
-Example 3:
-Input: nums = [3,3], target = 6
-Output: [0,1]
- 
-Constraints:
-- 2 <= nums.length <= 104
-- -109 <= nums[i] <= 109
-- -109 <= target <= 109
-- Only one valid answer exists.
-```
+### [3. Two sum](https://leetcode.com/problems/two-sum/)
 
 <details>
 <summary> Solution </summary>
@@ -151,32 +90,7 @@ print(two_sum(nums, target))
 </details>
 
 
-### 4. Valid palindrome
-```yaml
-A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all
-non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and
-numbers. Given a string s, return true if it is a palindrome, or false otherwise.
-
-Example 1:
-Input: s = "A man, a plan, a canal: Panama"
-Output: true
-Explanation: "amanaplanacanalpanama" is a palindrome.
-
-Example 2:
-Input: s = "race a car"
-Output: false
-Explanation: "raceacar" is not a palindrome.
-
-Example 3:
-Input: s = " "
-Output: true
-Explanation: s is an empty string "" after removing non-alphanumeric characters.
-Since an empty string reads the same forward and backward, it is a palindrome.
-
-Constraints:
-- 1 <= s.length <= 2 * 105
-- s consists only of printable ASCII characters.
-```
+### [4. Valid palindrome](https://leetcode.com/problems/valid-palindrome/)
 
 <details>
 <summary> Solution </summary>
@@ -245,27 +159,7 @@ print(is_palindrome(s))
 </details>
 
 
-### 5. Best time to buy and sell stock
-```yaml
-You are given an array prices where prices[i] is the price of a given stock on the ith day. You want to maximize
-your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
-Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
-
-Example 1:
-Input: prices = [7,1,5,3,6,4]
-Output: 5
-Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
-Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
-
-Example 2:
-Input: prices = [7,6,4,3,1]
-Output: 0
-Explanation: In this case, no transactions are done and the max profit = 0.
-
-Constraints:
-- 1 <= prices.length <= 105
-- 0 <= prices[i] <= 104
-```
+### [5. Best time to buy and sell stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 
 <details>
 <summary> Solution </summary>
@@ -299,31 +193,7 @@ print(max_profit(prices))
 </details>
 
 
-### 6. Valid parentheses
-```yaml
-Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
-
-An input string is valid if:
-- Open brackets must be closed by the same type of brackets.
-- Open brackets must be closed in the correct order.
-- Every close bracket has a corresponding open bracket of the same type.
-
-Example 1:
-Input: s = "()"
-Output: true
-
-Example 2:
-Input: s = "()[]{}"
-Output: true
-
-Example 3:
-Input: s = "(]"
-Output: false
-
-Constraints:
-- 1 <= s.length <= 104
-- s consists of parentheses only '()[]{}'.
-```
+### [6. Valid parentheses](https://leetcode.com/problems/valid-parentheses/)
 
 <details>
 <summary> Solution </summary>
@@ -367,28 +237,7 @@ print(is_valid(s5))
 </details>
 
 
-### 7. Binary search
-```yaml
-Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to
-search target in nums. If target exists, then return its index. Otherwise, return -1. You must write an algorithm
-with O(log n) runtime complexity.
-
-Example 1:
-Input: nums = [-1,0,3,5,9,12], target = 9
-Output: 4
-Explanation: 9 exists in nums and its index is 4
-
-Example 2:
-Input: nums = [-1,0,3,5,9,12], target = 2
-Output: -1
-Explanation: 2 does not exist in nums so return -1
-
-Constraints:
-- 1 <= nums.length <= 104
-- -10**4 < nums[i], target < 10**4
-- All the integers in nums are unique.
-- nums is sorted in ascending order.
-```
+### [7. Binary search](https://leetcode.com/problems/binary-search/)
 
 <details>
 <summary> Solution </summary>
