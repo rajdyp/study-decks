@@ -5,7 +5,8 @@ nav:
   - Home: index.md
   - Python:
     - Fundamentals:
-      - Python Basics: python/fundamentals/python_basics.md
+      - Python Basics:
+        - Python Basics: python/fundamentals/python_basics.md
         - Exercises: python/fundamentals/python_basics_exercises.md
       - Modules:
         - Modules: python/fundamentals/modules.md
