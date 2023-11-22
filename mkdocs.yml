@@ -35,6 +35,10 @@ nav:
       - CLI: k8s/k8s_cli.md
     - Helm:
       - Notes: helm/helm.md
+  - Service Mesh:
+    - Istio:
+      - Notes: istio/istio.md
+      - CLI: istio/istio_cli.md
 theme:
   name: material
   features:
