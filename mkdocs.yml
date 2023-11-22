@@ -5,14 +5,14 @@ nav:
   - Home: index.md
   - Linux:
     - Administration:
-      - Linux Notes: linux/linux.md
-      - Linux Quiz: linux/linux_quiz.md
+      - Notes: linux/linux.md
+      - Quiz: linux/linux_quiz.md
   - Python:
     - Fundamentals:
       - Python Basics:
-        - Python Notes: python/fundamentals/python.md
+        - Notes: python/fundamentals/python.md
         - Exercises: python/fundamentals/python_exercises.md
-        - Python Quiz: python/fundamentals/python_quiz.md
+        - Quiz: python/fundamentals/python_quiz.md
       - Modules:
         - Modules: python/fundamentals/modules.md
       - Frameworks:
