@@ -4,8 +4,9 @@ site_url: https://rajdyp.github.io/study-decks/
 nav:
   - Home: index.md
   - Linux:
-    - Linux Notes: linux/linux.md
-    - Linux Quiz: linux/linux_quiz.md
+    - Administration:
+      - Linux Notes: linux/linux.md
+      - Linux Quiz: linux/linux_quiz.md
   - Python:
     - Fundamentals:
       - Python Basics:
