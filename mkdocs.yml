@@ -25,7 +25,16 @@ nav:
     - Linux:
       - Notes: linux/linux.md
       - Quiz: linux/linux_quiz.md
-      
+  - Container:
+    - Docker:
+      - Notes: docker/docker.md
+      - CLI: docker/docker_cli.md
+  - Container Orchestration:
+    - Kubernetes:
+      - Notes: k8s/k8s.md
+      - CLI: k8s/k8s_cli.md
+    - Helm:
+      - Notes: helm/helm.md
 theme:
   name: material
   features:
