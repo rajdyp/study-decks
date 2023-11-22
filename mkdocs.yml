@@ -6,8 +6,9 @@ nav:
   - Python:
     - Fundamentals:
       - Python Basics:
-        - Python 101: python/fundamentals/python_basics.md
-        - Exercises: python/fundamentals/python_basics_exercises.md
+        - Python 101: python/fundamentals/python.md
+        - Exercises: python/fundamentals/python_exercises.md
+        - Quiz: python/fundamentals/python_q&a.md
       - Modules:
         - Modules: python/fundamentals/modules.md
       - Frameworks:
