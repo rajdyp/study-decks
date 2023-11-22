@@ -3,27 +3,28 @@ site_url: https://rajdyp.github.io/study-decks/
 
 nav:
   - Home: index.md
+  - Coding:
+    - Python:
+      - Fundamentals:
+        - Python Basics:
+          - Notes: python/fundamentals/python.md
+          - Exercises: python/fundamentals/python_exercises.md
+          - Quiz: python/fundamentals/python_quiz.md
+        - Modules:
+          - Modules: python/fundamentals/modules.md
+        - Frameworks:
+          - Fast API: python/fundamentals/fast_api.md
+      - DSA:
+        - Arrays:
+          - Arrays: python/dsa/arrays.md
+        - Practice Problems:
+          - Leetcode: python/dsa/leetcode.md
+      - Others:
+        - External Links: python/fundamentals/external_links.md
   - OS:
     - Linux:
       - Notes: linux/linux.md
       - Quiz: linux/linux_quiz.md
-  - Python:
-    - Fundamentals:
-      - Python Basics:
-        - Notes: python/fundamentals/python.md
-        - Exercises: python/fundamentals/python_exercises.md
-        - Quiz: python/fundamentals/python_quiz.md
-      - Modules:
-        - Modules: python/fundamentals/modules.md
-      - Frameworks:
-        - Fast API: python/fundamentals/fast_api.md
-    - DSA:
-      - Arrays:
-        - Arrays: python/dsa/arrays.md
-      - Practice Problems:
-        - Leetcode: python/dsa/leetcode.md
-    - Others:
-      - External Links: python/fundamentals/external_links.md
       
 theme:
   name: material
