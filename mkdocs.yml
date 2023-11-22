@@ -3,12 +3,15 @@ site_url: https://rajdyp.github.io/study-decks/
 
 nav:
   - Home: index.md
+  - Linux:
+    - Linux Notes: linux/linux.md
+    - Linux Quiz: linux/linux_quiz.md
   - Python:
     - Fundamentals:
       - Python Basics:
-        - Python 101: python/fundamentals/python.md
+        - Python Notes: python/fundamentals/python.md
         - Exercises: python/fundamentals/python_exercises.md
-        - Quiz: python/fundamentals/python_quiz.md
+        - Python Quiz: python/fundamentals/python_quiz.md
       - Modules:
         - Modules: python/fundamentals/modules.md
       - Frameworks:
