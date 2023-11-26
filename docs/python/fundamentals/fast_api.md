@@ -48,7 +48,6 @@ class Settings(BaseSettings):
     db: SQLLiteSettings = DBSettings()
 ```
 
-> [!NOTE]
 > Argument with a default parameter: `LOGGING_LEVEL: int = logging.INFO` 
 
 
@@ -81,8 +80,6 @@ def create_user_signup(
     ...
 ```
 
-> [!NOTE] 
-> 
 > asterisk (*) : Keyword-only arguments marker enforces use of keyword arguments to call the function, making the code 
 > more readable and less error-prone, especially when dealing with functions that have multiple parameters.
 > 
