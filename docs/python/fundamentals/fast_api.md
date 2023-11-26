@@ -48,7 +48,7 @@ class Settings(BaseSettings):
     db: SQLLiteSettings = DBSettings()
 ```
 
-1.  LOGGING_LEVEL: int = logging.INFO -> argument with a default parameter
+1.  :man_raising_hand: LOGGING_LEVEL: int = logging.INFO -> argument with a default parameter
 
 
 ## Dependency injection (a.k.a. handle code requirements)
