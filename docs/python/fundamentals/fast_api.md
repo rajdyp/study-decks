@@ -28,6 +28,7 @@ from pydantic import BaseModel
 class Msg(BaseModel):
     msg: str
 ```
+> `def root()` : This function is called path operator function i.e. function that is associated with a specific path and HTTP method.
 
 
 ## Pydantic classes for defining app config (a.k.a BaseSettings)
@@ -48,7 +49,7 @@ class Settings(BaseSettings):
     db: SQLLiteSettings = DBSettings()
 ```
 
-> Argument with a default parameter: `LOGGING_LEVEL: int = logging.INFO` 
+> `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
 
 
 ## Dependency injection (a.k.a. handle code requirements)
