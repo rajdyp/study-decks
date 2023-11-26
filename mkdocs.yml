@@ -52,6 +52,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
+    - content.code.select
   language: en
   palette:
     - scheme: slate
