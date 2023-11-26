@@ -2,7 +2,7 @@
 
 ## Python type hints
 
-```{ .python .copy .select}
+``` py
 @api.get('/api/add')
 def calculate(x: int, y: int):
     value = x + y
@@ -32,7 +32,7 @@ class Msg(BaseModel):
 
 ## Pydantic classes for defining app config (a.k.a BaseSettings)
 
-```python
+``` py
 class LoggingSettings(BaseSettings):
     # logging levels are ints
     LOGGING_LEVEL: int = logging.INFO    # (1)
