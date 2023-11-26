@@ -16,7 +16,7 @@ def calculate(x: int, y: int):
 
 ## Pydantic model example (a.k.a BaseModel)
 
-```python
+``` py
 # API config
 @api_router.get("/", response_model=schemas.Msg, status_code=200)
 def root() -> dict:
@@ -35,8 +35,8 @@ class Msg(BaseModel):
 ``` py
 class LoggingSettings(BaseSettings):
     # logging levels are ints
-    LOGGING_LEVEL: int = logging.INFO    # (1)!
-
+    LOGGING_LEVEL: int = logging.INFO
+# (1)!
 class DBSettings(BaseSettings):
     SQLALCHEMY_DATABASE_URI: str
 
@@ -53,7 +53,7 @@ class Settings(BaseSettings):
 
 ## Dependency injection (a.k.a. handle code requirements)
 
-```python
+``` py
 # inject database dependency
 
 from fastapi import Depends
@@ -95,7 +95,7 @@ def create_user_signup(
 
 ## In-process background tasks
 
-```python
+``` py
 @router.post("/send-password-reset", status_code=200)
 def send_password_reset(
     background_tasks: BackgroundTasks,
