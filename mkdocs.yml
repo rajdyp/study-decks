@@ -67,6 +67,9 @@ theme:
         name: Switch to light mode    
       primary: black
       accent: amber
+  icon:
+    admonition:
+      <type>: <icon>
 
 markdown_extensions:
   - pymdownx.highlight:
