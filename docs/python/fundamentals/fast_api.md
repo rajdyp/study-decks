@@ -2,7 +2,7 @@
 
 ## Python type hints
 
-```python
+```{ .python .copy .select}
 @api.get('/api/add')
 def calculate(x: int, y: int):
     value = x + y
@@ -35,7 +35,7 @@ class Msg(BaseModel):
 ```python
 class LoggingSettings(BaseSettings):
     # logging levels are ints
-    LOGGING_LEVEL: int = logging.INFO
+    LOGGING_LEVEL: int = logging.INFO    # (1)
 
 class DBSettings(BaseSettings):
     SQLALCHEMY_DATABASE_URI: str
@@ -48,13 +48,7 @@ class Settings(BaseSettings):
     db: SQLLiteSettings = DBSettings()
 ```
 
-<div class="result" markdown>
-
-!!! note
-
-    LOGGING_LEVEL: int = logging.INFO -> argument with a default parameter
-
-</div>
+1.  LOGGING_LEVEL: int = logging.INFO -> argument with a default parameter
 
 
 ## Dependency injection (a.k.a. handle code requirements)
