@@ -13,7 +13,8 @@ nav:
         - Modules:
           - Modules: python/fundamentals/modules.md
         - Frameworks:
-          - Fast API: python/fundamentals/fast_api.md
+          - Fast API: 
+            - Notes: python/fundamentals/fast_api.md
       - DSA:
         - Arrays:
           - Arrays: python/dsa/arrays.md
