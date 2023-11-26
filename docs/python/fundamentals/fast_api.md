@@ -36,7 +36,7 @@ class Msg(BaseModel):
 class LoggingSettings(BaseSettings):
     # logging levels are ints
     LOGGING_LEVEL: int = logging.INFO
-# (1)!
+
 class DBSettings(BaseSettings):
     SQLALCHEMY_DATABASE_URI: str
 
@@ -48,7 +48,8 @@ class Settings(BaseSettings):
     db: SQLLiteSettings = DBSettings()
 ```
 
-1.  :man_raising_hand: LOGGING_LEVEL: int = logging.INFO -> argument with a default parameter
+> [!NOTE]
+> Argument with a default parameter: `LOGGING_LEVEL: int = logging.INFO` 
 
 
 ## Dependency injection (a.k.a. handle code requirements)
@@ -80,17 +81,12 @@ def create_user_signup(
     ...
 ```
 
-<div class="result" markdown>
-
-!!! note
-
-    * : Keyword-only arguments marker
-        Enforces use of keyword arguments to call the function, making the code more readable and less error-prone, 
-        especially when dealing with functions that have multiple parameters
-
-    # call function with keyword arguments
-    example = create_user_signup(db=db_session, user_in=user_data)
-</div>
+> [!NOTE] 
+> 
+> asterisk (*) : Keyword-only arguments marker enforces use of keyword arguments to call the function, making the code 
+> more readable and less error-prone, especially when dealing with functions that have multiple parameters.
+> 
+> Call function with keyword arguments: `example = create_user_signup(db=db_session, user_in=user_data)`
 
 
 ## In-process background tasks
