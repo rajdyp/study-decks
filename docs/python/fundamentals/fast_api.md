@@ -1,6 +1,8 @@
 ![image](https://github.com/rajdyp/study-decks/assets/15313631/b8f909df-abaf-4e69-b8c2-d5f44b3e2ae7)
 
 ## Python type hints
+- The `typing` module in Python provides support for type hints.
+- Type hints are a way to indicate the expected types of values in function signatures, variables, and other places where types are relevant.
 
 ``` py
 @api.get('/api/add')
@@ -101,3 +103,37 @@ def send_password_reset(
         user=user_in,
     )
 ```
+
+
+## SQLAlchemy
+
+``` py
+import typing as t
+from sqlalchemy.ext.declarative import as_declarative, declared_attr
+
+class_registry: t.Dict = {}
+
+@as_declarative(class_registry=class_registry)
+class Base:
+    id: t.Any
+    __name__: str
+
+    # Generate __tablename__ automatically
+    @declared_attr
+    def __tablename__(cls) -> str:
+        return cls.__name__.lower()
+```
+
+TL;DR: Applying @as_declarative to the Base class sets the stage for creating declarative base classes, and SQLAlchemy uses the class_registry to keep track of these classes for various ORM operations.
+
+### @as_declarative on Base class
+Applying @as_declarative to the Base class means that any class inheriting from Base will become a declarative base class.
+
+### Inheritance and Class Registry
+When we create a class that inherits from Base, it inherits the characteristics needed for SQLAlchemy to understand it as a declarative base class. The class_registry dictionary is used by SQLAlchemy to keep track of these classes.
+
+### Automatic Table Naming
+The __tablename__ method (decorated with @declared_attr) is a special method that SQLAlchemy recognizes. It automatically generates the name of the database table associated with the class. In this case, it's using the lowercase name of the class.
+
+### Using Declarative Base Classes
+Once we have declarative base classes, we can use them to define and interact with database tables. SQLAlchemy provides an ORM (Object-Relational Mapping) system that allows us to work with database records as if they were Python objects.
