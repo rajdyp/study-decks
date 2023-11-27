@@ -87,7 +87,7 @@ def create_user_signup(
     asterisk (*) : Keyword-only arguments marker enforces use of keyword arguments to call the function, making the code 
     more readable and less error-prone, especially when dealing with functions that have multiple parameters.
  
-    Call function with keyword arguments: `example = create_user_signup(db=db_session, user_in=user_data)
+    Call function with keyword arguments: `example = create_user_signup(db=db_session, user_in=user_data)`
 
 
 ## In-process background tasks
