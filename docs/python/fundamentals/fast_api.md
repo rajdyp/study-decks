@@ -51,7 +51,6 @@ class Settings(BaseSettings):
     db: SQLLiteSettings = DBSettings()
 ```
 
-> `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
 1. `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
 
 ## Dependency injection (a.k.a. handle code requirements)
@@ -83,16 +82,13 @@ def create_user_signup(
     ...
 ```
 
-> asterisk (*) : Keyword-only arguments marker enforces use of keyword arguments to call the function, making the code 
-> more readable and less error-prone, especially when dealing with functions that have multiple parameters.
-> 
-> Call function with keyword arguments: `example = create_user_signup(db=db_session, user_in=user_data)`
-
 !!! note
-asterisk (*) : Keyword-only arguments marker enforces use of keyword arguments to call the function, making the code 
-more readable and less error-prone, especially when dealing with functions that have multiple parameters.
+
+    asterisk (*) : Keyword-only arguments marker enforces use of keyword arguments to call the function, making the code 
+    more readable and less error-prone, especially when dealing with functions that have multiple parameters.
  
-Call function with keyword arguments: `example = create_user_signup(db=db_session, user_in=user_data)
+    Call function with keyword arguments: `example = create_user_signup(db=db_session, user_in=user_data)
+
 
 ## In-process background tasks
 
