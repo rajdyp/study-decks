@@ -82,6 +82,7 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
+    annotation: material/plus-circle
 
 markdown_extensions:
   - pymdownx.highlight:
