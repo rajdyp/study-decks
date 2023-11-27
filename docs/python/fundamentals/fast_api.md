@@ -38,7 +38,7 @@ class Msg(BaseModel):
 ``` py
 class LoggingSettings(BaseSettings):
     # logging levels are ints
-    LOGGING_LEVEL: int = logging.INFO    (1)
+    LOGGING_LEVEL: int = logging.INFO        # (1)
 
 class DBSettings(BaseSettings):
     SQLALCHEMY_DATABASE_URI: str
@@ -49,10 +49,9 @@ class Settings(BaseSettings):
 
     logging: LoggingSettings = LoggingSettings()
     db: SQLLiteSettings = DBSettings()
-
-{.annotate}
-1. `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
 ```
+
+1. `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
 
 
 ## Dependency injection (a.k.a. handle code requirements)
