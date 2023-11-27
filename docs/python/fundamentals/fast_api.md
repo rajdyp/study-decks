@@ -38,7 +38,7 @@ class Msg(BaseModel):
 ``` py
 class LoggingSettings(BaseSettings):
     # logging levels are ints
-    LOGGING_LEVEL: int = logging.INFO        # (1)
+    LOGGING_LEVEL: int = logging.INFO
 
 class DBSettings(BaseSettings):
     SQLALCHEMY_DATABASE_URI: str
@@ -51,7 +51,7 @@ class Settings(BaseSettings):
     db: SQLLiteSettings = DBSettings()
 ```
 
-1. `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
+> `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
 
 
 ## Dependency injection (a.k.a. handle code requirements)
@@ -109,6 +109,8 @@ def send_password_reset(
 
 ## SQLAlchemy
 
+TL;DR: Applying @as_declarative to the Base class sets the stage for creating declarative base classes, and SQLAlchemy uses the class_registry to keep track of these classes for various ORM operations.
+
 ``` py
 import typing as t
 from sqlalchemy.ext.declarative import as_declarative, declared_attr
@@ -126,18 +128,18 @@ class Base:
         return cls.__name__.lower()
 ```
 
-TL;DR: Applying @as_declarative to the Base class sets the (1) stage for creating declarative base classes, and SQLAlchemy uses the class_registry to keep track of these classes for various ORM operations.
-{ .annotate }
-1. This is test
-
 ### @as_declarative on Base class
-Applying @as_declarative to the Base class means that any class inheriting from Base will become a declarative base class.
+- Applying @as_declarative to the Base class means that any class inheriting from Base will become a declarative base class.
 
 ### Inheritance and Class Registry
-When we create a class that inherits from Base, it inherits the characteristics needed for SQLAlchemy to understand it as a declarative base class. The class_registry dictionary is used by SQLAlchemy to keep track of these classes.
+- When we create a class that inherits from Base, it inherits the characteristics needed for SQLAlchemy to understand it as a declarative base class.
+- The class_registry dictionary is used by SQLAlchemy to keep track of these classes.
 
 ### Automatic Table Naming
-The __tablename__ method (decorated with @declared_attr) is a special method that SQLAlchemy recognizes. It automatically generates the name of the database table associated with the class. In this case, it's using the lowercase name of the class.
+- The __tablename__ method (decorated with @declared_attr) is a special method that SQLAlchemy recognizes.
+- It automatically generates the name of the database table associated with the class.
+    - In this case, it's using the lowercase name of the class.
 
 ### Using Declarative Base Classes
-Once we have declarative base classes, we can use them to define and interact with database tables. SQLAlchemy provides an ORM (Object-Relational Mapping) system that allows us to work with database records as if they were Python objects.
+- Once we have declarative base classes, we can use them to define and interact with database tables.
+- SQLAlchemy provides an ORM (Object-Relational Mapping) system that allows us to work with database records as if they were Python objects.
