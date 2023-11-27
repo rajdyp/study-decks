@@ -127,7 +127,7 @@ class Base:
 ```
 
 TL;DR: Applying @as_declarative to the Base class sets the (1) stage for creating declarative base classes, and SQLAlchemy uses the class_registry to keep track of these classes for various ORM operations.
-
+{ .annotate }
 1. This is test
 
 ### @as_declarative on Base class
