@@ -1,14 +1,5 @@
 ![image](https://github.com/rajdyp/study-decks/assets/15313631/b8f909df-abaf-4e69-b8c2-d5f44b3e2ae7)
 
-``` yaml
-theme:
-  features:
-    - content.code.annotate # (1)
-```
-
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be written in Markdown.
-
 ## Python type hints
 - The `typing` module in Python provides support for type hints.
 - Type hints are a way to indicate the expected types of values in function signatures, variables, and other places where types are relevant.
@@ -30,20 +21,6 @@ def calculate(x: int, y: int):
 ``` py
 # API config
 @api_router.get("/", response_model=schemas.Msg, status_code=200)
-def root() -> dict:
-    return {"msg": "This is the Example API"}
-
-# schema
-from pydantic import BaseModel
-
-class Msg(BaseModel):
-    msg: str
-```
-> `def root()` : This function is called path operator function i.e. function that is associated with a specific path and HTTP method.
-
-``` yaml
-# API config
-@api_router.get("/", response_model=schemas.Msg, status_code=200)
 def root() -> dict: # (1)
     return {"msg": "This is the Example API"}
 
@@ -56,26 +33,10 @@ class Msg(BaseModel):
 
 1.  `def root()` : This function is called path operator function i.e. function that is associated with a specific path and HTTP method.
 
+
 ## Pydantic classes for defining app config (a.k.a BaseSettings)
 
-``` yaml
-class LoggingSettings(BaseSettings):
-    # logging levels are ints
-    LOGGING_LEVEL: int = logging.INFO # (1)
-
-class DBSettings(BaseSettings):
-    SQLALCHEMY_DATABASE_URI: str
-
-class Settings(BaseSettings):
-    # 60 minutes * 24 hours * 8 = 8 days
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8
-
-    logging: LoggingSettings = LoggingSettings()
-    db: SQLLiteSettings = DBSettings()
-```
-1.  :man_raising_hand: This is an argument with a default parameter.
-
-``` yaml
+``` py
 class LoggingSettings(BaseSettings):
     # logging levels are ints
     LOGGING_LEVEL: int = logging.INFO # (1)
@@ -92,8 +53,6 @@ class Settings(BaseSettings):
 ```
 
 1.  argument with a default parameter
-
-> `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
 
 
 ## Dependency injection (a.k.a. handle code requirements)
