@@ -59,7 +59,16 @@ class Settings(BaseSettings):
     logging: LoggingSettings = LoggingSettings()
     db: SQLLiteSettings = DBSettings()
 ```
-1.  This is an argument with a default parameter.
+1.  :man_raising_hand: This is an argument with a default parameter.
+
+``` yaml
+theme:
+  features:
+    - content.code.annotate # (1)
+```
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
 
 > `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
 
