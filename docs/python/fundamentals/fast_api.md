@@ -62,9 +62,19 @@ class Settings(BaseSettings):
 1.  :man_raising_hand: This is an argument with a default parameter.
 
 ``` yaml
-theme:
-  features:
-    - content.code.annotate # (1)
+class LoggingSettings(BaseSettings):
+    # logging levels are ints
+    LOGGING_LEVEL: int = logging.INFO # (1)
+
+class DBSettings(BaseSettings):
+    SQLALCHEMY_DATABASE_URI: str
+
+class Settings(BaseSettings):
+    # 60 minutes * 24 hours * 8 = 8 days
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 8
+
+    logging: LoggingSettings = LoggingSettings()
+    db: SQLLiteSettings = DBSettings()
 ```
 
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
