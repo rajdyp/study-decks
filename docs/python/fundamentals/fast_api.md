@@ -44,7 +44,7 @@ class Msg(BaseModel):
 
 ## Pydantic classes for defining app config (a.k.a BaseSettings)
 
-``` py
+``` yaml
 class LoggingSettings(BaseSettings):
     # logging levels are ints
     LOGGING_LEVEL: int = logging.INFO # (1)
