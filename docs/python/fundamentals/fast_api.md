@@ -41,6 +41,20 @@ class Msg(BaseModel):
 ```
 > `def root()` : This function is called path operator function i.e. function that is associated with a specific path and HTTP method.
 
+``` yaml
+# API config
+@api_router.get("/", response_model=schemas.Msg, status_code=200)
+def root() -> dict: # (1)
+    return {"msg": "This is the Example API"}
+
+# schema
+from pydantic import BaseModel
+
+class Msg(BaseModel):
+    msg: str
+```
+
+1.  `def root()` : This function is called path operator function i.e. function that is associated with a specific path and HTTP method.
 
 ## Pydantic classes for defining app config (a.k.a BaseSettings)
 
@@ -77,8 +91,7 @@ class Settings(BaseSettings):
     db: SQLLiteSettings = DBSettings()
 ```
 
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be written in Markdown.
+1.  argument with a default parameter
 
 > `LOGGING_LEVEL: int = logging.INFO` : This is an argument with a default parameter.
 
