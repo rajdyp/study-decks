@@ -91,6 +91,37 @@ def create_user_signup(
  
     Call function with keyword arguments: `example = create_user_signup(db=db_session, user_in=user_data)`
 
+``` py
+# inject database dependency
+
+from fastapi import Depends
+
+# dependency function
+def get_db() -> t.Generator:
+    # SQLAlchemy ORM session
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+# API config
+@api_router.post("/signup", response_model=schemas.User, status_code=201)
+def create_user_signup(
+    # "Depends" specify database dependency
+    *, db: Session = Depends(deps.get_db), user_in: schemas.CreateUser, # (1)
+    ) -> Any:
+    """
+    Create new user without the need to be logged in.
+    """
+    user = db.query(User).filter(User.email == user_in.email).first()
+    ...
+```
+
+1.  asterisk (*) : Keyword-only arguments marker enforces use of keyword arguments to call the function, making the code
+    more readable and less error-prone, especially when dealing with functions that have multiple parameters.
+
+    Call function with keyword arguments: `example = create_user_signup(db=db_session, user_in=user_data)`
 
 ## In-process background tasks
 
