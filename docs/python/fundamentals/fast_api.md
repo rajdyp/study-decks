@@ -47,7 +47,7 @@ class Msg(BaseModel):
 ``` py
 class LoggingSettings(BaseSettings):
     # logging levels are ints
-    LOGGING_LEVEL: int = logging.INFO    # (1)
+    LOGGING_LEVEL: int = logging.INFO # (1)
 
 class DBSettings(BaseSettings):
     SQLALCHEMY_DATABASE_URI: str
