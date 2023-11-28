@@ -1,5 +1,14 @@
 ![image](https://github.com/rajdyp/study-decks/assets/15313631/b8f909df-abaf-4e69-b8c2-d5f44b3e2ae7)
 
+``` yaml
+theme:
+  features:
+    - content.code.annotate # (1)
+```
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
+
 ## Python type hints
 - The `typing` module in Python provides support for type hints.
 - Type hints are a way to indicate the expected types of values in function signatures, variables, and other places where types are relevant.
