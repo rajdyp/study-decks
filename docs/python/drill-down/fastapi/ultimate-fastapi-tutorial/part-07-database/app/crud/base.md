@@ -67,25 +67,24 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
 
 ??? note
 
-    ``` md
     Title: CRUD Base Implementation with Type Hints
     
     Summary:
     The provided code defines a generic CRUD (Create, Read, Update, Delete) base class, `CRUDBase`, using type hints for flexibility and 
     clarity. It is designed to work with SQLAlchemy models and Pydantic schemas.
     
-    Imports:
+    1. Imports:
         - The code imports various types and modules, including `Any`, `Dict`, `Generic` (1), `List`, `Optional`, `Type`, `TypeVar` (2), and `Union`.
         - It uses `jsonable_encoder` from  `fastapi.encoders`, `BaseModel` from `pydantic`, and `Session` from `sqlalchemy.orm`.
         - `ModelType`, `CreateSchemaType`, and `UpdateSchemaType` are defined as type variables (`TypeVar`) for flexibility in generic class 
         definition.
     
-    Type Variables:
+    2. Type Variables:
         - `ModelType`: Represents the SQLAlchemy model type bound to the `Base` class.
         - `CreateSchemaType`: Represents the type of Pydantic schema used for creating objects.
         - `UpdateSchemaType`: Represents the type of Pydantic schema used for updating objects.
     
-    CRUDBase Class:
+    3. CRUDBase Class:
         - Initialization:
           - Takes a `model` parameter, which is a SQLAlchemy model class.
         - Methods:
@@ -95,7 +94,7 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
           - `update`: Updates an object in the database using a Pydantic schema or a dictionary.
           - `remove`: Deletes an object from the database by ID.
       
-    Method Details:
+    4. Method Details:
         - `get`: Queries the database using the model's ID field.
         - `get_multi`: Queries the database with optional skip and limit parameters.
         - `create`: Converts the Pydantic schema into JSON, creates a new object, and commits it to the database.
@@ -105,7 +104,6 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     Usage:
     This generic `CRUDBase` class can be used as a base class for specific CRUD implementations for different SQLAlchemy models and Pydantic 
     schemas. It provides reusable and type-safe methods for common database operations.
-    ```
 
     1.  - `Generic` is a feature from the typing module. 
         - It allows us to create generic classes or functions that can work with different types while preserving type hints. 
