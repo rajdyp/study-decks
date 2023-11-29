@@ -75,7 +75,7 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     clarity. It is designed to work with SQLAlchemy models and Pydantic schemas.
     
     Imports:
-        - The code imports various types and modules, including `Any`, `Dict`, `Generic`, `List`, `Optional`, `Type`, `TypeVar`, and `Union`.
+        - The code imports various types and modules, including `Any`, `Dict`, `Generic` (1), `List`, `Optional`, `Type`, `TypeVar` (2), and `Union`.
         - It uses `jsonable_encoder` from  `fastapi.encoders`, `BaseModel` from `pydantic`, and `Session` from `sqlalchemy.orm`.
         - `ModelType`, `CreateSchemaType`, and `UpdateSchemaType` are defined as type variables (`TypeVar`) for flexibility in generic class 
         definition.
@@ -106,3 +106,13 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     This generic `CRUDBase` class can be used as a base class for specific CRUD implementations for different SQLAlchemy models and Pydantic 
     schemas. It provides reusable and type-safe methods for common database operations.
     ```
+
+    1.  - `Generic` is a feature from the typing module. 
+        - It allows us to create generic classes or functions that can work with different types while preserving type hints. 
+        - By using Generic, we can define classes or functions with type parameters that are only resolved when an instance or function call is made. 
+        - It is particularly useful for creating reusable and type-safe code that can operate on a variety of types.
+        
+    2.  - `TypeVar` is a generic type variable introduced in Python's typing module.
+        - It is used to declare a placeholder for a type that will be specified later.
+        - It allows us to create functions or classes that can work with different types without specifying the exact type until it is used.
+        - `TypeVar` can have an optional bound parameter, which restricts the type to a particular base class or type.
