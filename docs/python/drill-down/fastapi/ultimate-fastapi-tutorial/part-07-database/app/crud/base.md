@@ -106,15 +106,15 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     schemas. It provides reusable and type-safe methods for common database operations.
 
     { .annotate }
-    1.  - `Generic` is a feature from the typing module. 
-        - It allows us to create generic classes or functions that can work with different types while preserving type hints. 
-        - By using Generic, we can define classes or functions with type parameters that are only resolved when an instance or function call is made. 
-        - It is particularly useful for creating reusable and type-safe code that can operate on a variety of types.
+    1.  `Generic` is a feature from the typing module. 
+        It allows us to create generic classes or functions that can work with different types while preserving type hints. 
+        By using Generic, we can define classes or functions with type parameters that are only resolved when an instance or function call is made. 
+        It is particularly useful for creating reusable and type-safe code that can operate on a variety of types.
         
-    2.  - `TypeVar` is a generic type variable introduced in Python's typing module.
-        - It is used to declare a placeholder for a type that will be specified later.
-        - It allows us to create functions or classes that can work with different types without specifying the exact type until it is used.
-        - `TypeVar` can have an optional bound parameter, which restricts the type to a particular base class or type.
+    2.  `TypeVar` is a generic type variable introduced in Python's typing module.
+        It is used to declare a placeholder for a type that will be specified later.
+        It allows us to create functions or classes that can work with different types without specifying the exact type until it is used.
+        `TypeVar` can have an optional bound parameter, which restricts the type to a particular base class or type.
     Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
 
 
