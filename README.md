@@ -1,2 +1,2 @@
-# study-decks
-My study decks.
+# study-notes
+My study notes.
