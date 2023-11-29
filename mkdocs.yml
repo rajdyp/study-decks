@@ -15,6 +15,28 @@ nav:
         - Frameworks:
           - Fast API: 
             - Notes: python/fundamentals/fast_api.md
+            - Ultimate FastAPI Tutorial:
+              - Hello World:
+              - Path Parameters:
+              - Query Parameters:
+              - Pydantic Schemas:
+              - Basic Error Handling:
+              - Jinja Templates:
+              - Database:
+                - app:
+                  - crud:
+                  - db:
+                    - base.py: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+                  - models:
+                  - schemas:
+                  - templates:
+              - Structure And Versioning:
+              - Async:
+              - JWT Auth:
+              - Dependency Injection:
+              - React frontend:
+              - Docker Deployment:
+              - Send Email in Background:
       - DSA:
         - Arrays:
           - Arrays: python/dsa/arrays.md
