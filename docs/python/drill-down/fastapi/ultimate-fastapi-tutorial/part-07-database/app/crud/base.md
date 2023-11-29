@@ -73,22 +73,17 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
       The provided code defines a generic CRUD (Create, Read, Update, Delete) base class, `CRUDBase`, using type hints for flexibility and clarity. 
       It is designed to work with SQLAlchemy models and Pydantic schemas.
       
-     ** Details:**
-      
-      1. **Imports:**
-      
+     **Imports:**
       - The code imports various types and modules, including `Any`, `Dict`, `Generic`, `List`, `Optional`, `Type`, `TypeVar`, and `Union`.
       - It uses `jsonable_encoder` from  `fastapi.encoders`, `BaseModel` from `pydantic`, and `Session` from `sqlalchemy.orm`.
       - `ModelType`, `CreateSchemaType`, and `UpdateSchemaType` are defined as type variables (`TypeVar`) for flexibility in generic class definition.
     
-      2. **Type Variables:**
-      
+     **Type Variables:**
       - `ModelType`: Represents the SQLAlchemy model type bound to the `Base` class.
       - `CreateSchemaType`: Represents the type of Pydantic schema used for creating objects.
       - `UpdateSchemaType`: Represents the type of Pydantic schema used for updating objects.
     
-      3. **CRUDBase Class:**
-      
+     **CRUDBase Class:**
       - Initialization:
         - Takes a `model` parameter, which is a SQLAlchemy model class.
       - Methods:
@@ -98,8 +93,7 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         - `update`: Updates an object in the database using a Pydantic schema or a dictionary.
         - `remove`: Deletes an object from the database by ID.
         
-      4. **Method Details:**
-      
+      **Method Details:**
       - `get`: Queries the database using the model's ID field.
       - `get_multi`: Queries the database with optional skip and limit parameters.
       - `create`: Converts the Pydantic schema into JSON, creates a new object, and commits it to the database.
