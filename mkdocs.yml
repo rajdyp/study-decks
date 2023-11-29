@@ -16,20 +16,20 @@ nav:
           - Fast API: 
             - Notes: python/fundamentals/fast_api.md
             - Ultimate FastAPI Tutorial:
-              - Hello World:
-              - Path Parameters:
-              - Query Parameters:
-              - Pydantic Schemas:
-              - Basic Error Handling:
-              - Jinja Templates:
-              - Database:
-              - Structure And Versioning:
-              - Async:
-              - JWT Auth:
-              - Dependency Injection:
-              - React frontend:
-              - Docker Deployment:
-              - Send Email in Background:
+              - Hello World: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Path Parameters: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Query Parameters: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Pydantic Schemas: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Basic Error Handling: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Jinja Templates: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Database: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Structure And Versioning: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Async: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - JWT Auth: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Dependency Injection: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - React frontend: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Docker Deployment: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Send Email in Background: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
       - DSA:
         - Arrays:
           - Arrays: python/dsa/arrays.md
