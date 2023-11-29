@@ -115,9 +115,10 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         It is used to declare a placeholder for a type that will be specified later.
         It allows us to create functions or classes that can work with different types without specifying the exact type until it is used.
         `TypeVar` can have an optional bound parameter, which restricts the type to a particular base class or type.
+    
     Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
-
-
+    
+    
     Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
     { .annotate }
     
