@@ -105,6 +105,7 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     This generic `CRUDBase` class can be used as a base class for specific CRUD implementations for different SQLAlchemy models and Pydantic 
     schemas. It provides reusable and type-safe methods for common database operations.
 
+    { .annotate }
     1.  - `Generic` is a feature from the typing module. 
         - It allows us to create generic classes or functions that can work with different types while preserving type hints. 
         - By using Generic, we can define classes or functions with type parameters that are only resolved when an instance or function call is made. 
