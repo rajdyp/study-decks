@@ -71,15 +71,14 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     Title: CRUD Base Implementation with Type Hints
     
     Summary:
-    The provided code defines a generic CRUD (Create, Read, Update, Delete) base class, `CRUDBase`, using type hints for 
-    flexibility and clarity. It is designed to work with SQLAlchemy models and Pydantic schemas.
+    The provided code defines a generic CRUD (Create, Read, Update, Delete) base class, `CRUDBase`, using type hints for flexibility and 
+    clarity. It is designed to work with SQLAlchemy models and Pydantic schemas.
     
     Imports:
-        - The code imports various types and modules, including `Any`, `Dict`, `Generic`, `List`, `Optional`, `Type`, `TypeVar`, 
-        and `Union`.
+        - The code imports various types and modules, including `Any`, `Dict`, `Generic`, `List`, `Optional`, `Type`, `TypeVar`, and `Union`.
         - It uses `jsonable_encoder` from  `fastapi.encoders`, `BaseModel` from `pydantic`, and `Session` from `sqlalchemy.orm`.
-        - `ModelType`, `CreateSchemaType`, and `UpdateSchemaType` are defined as type variables (`TypeVar`) for flexibility in 
-        generic class definition.
+        - `ModelType`, `CreateSchemaType`, and `UpdateSchemaType` are defined as type variables (`TypeVar`) for flexibility in generic class 
+        definition.
     
     Type Variables:
         - `ModelType`: Represents the SQLAlchemy model type bound to the `Base` class.
@@ -104,6 +103,6 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         - `remove`: Deletes an object from the database.
     
     Usage:
-    This generic `CRUDBase` class can be used as a base class for specific CRUD implementations for different SQLAlchemy models
-    and Pydantic schemas. It provides reusable and type-safe methods for common database operations.
+    This generic `CRUDBase` class can be used as a base class for specific CRUD implementations for different SQLAlchemy models and Pydantic 
+    schemas. It provides reusable and type-safe methods for common database operations.
     ```
