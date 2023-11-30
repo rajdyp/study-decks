@@ -76,11 +76,14 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     1.  test
     
     1. Imports:
-        - The code imports various types and modules, including `Any`, `Dict`, `Generic`, (2) `List`, `Optional`, `Type`, `TypeVar`, (3) and `Union`.
+        - The code imports various types and modules, including `Any`, `Dict`, `Generic`, (1) `List`, `Optional`, `Type`, `TypeVar`, (2) and `Union`.
         - It uses `jsonable_encoder` from  `fastapi.encoders`, `BaseModel` from `pydantic`, and `Session` from `sqlalchemy.orm`.
         - `ModelType`, `CreateSchemaType`, and `UpdateSchemaType` are defined as type variables (`TypeVar`) for flexibility in generic class 
         definition.
-        
+    { .annotate }
+    1. test1
+    2. test2
+    
     2. Type Variables:
         - `ModelType`: Represents the SQLAlchemy model type bound to the `Base` class.
         - `CreateSchemaType`: Represents the type of Pydantic schema used for creating objects.
@@ -105,11 +108,10 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     
     Usage:
     This generic `CRUDBase` class can be used as a base class for specific CRUD implementations for different SQLAlchemy models and Pydantic 
-    schemas. It provides reusable and type-safe methods for common database operations.
+    schemas. It provides reusable and type-safe methods for common database operations.  (1)
+    { .annotate }
+    1. test1
     
     Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
     { .annotate }
-    
     1. test1
-    2. test2
-    3. test3
