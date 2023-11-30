@@ -65,6 +65,8 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
         return obj
 ```
 
+
+``` md
 ??? note
 
     Title: CRUD Base Implementation with Type Hints
@@ -112,4 +114,5 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
 2.  `TypeVar` is a generic type variable introduced in Python's typing module.
     It is used to declare a placeholder for a type that will be specified later.
     It allows us to create functions or classes that can work with different types without specifying the exact type until it is used.
-    TypeVar` can have an optional bound parameter, which restricts the type to a particular base class or type.    
+    TypeVar` can have an optional bound parameter, which restricts the type to a particular base class or type.
+```
