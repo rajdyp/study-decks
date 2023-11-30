@@ -16,7 +16,9 @@ nav:
           - Fast API: 
             - Notes: python/fundamentals/fast_api.md
             - Ultimate FastAPI Tutorial:
-              - Hello World: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
+              - Hello World: 
+                  - app:
+                      - main.py: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-01-hello-world/app/main.md
               - Path Parameters: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
               - Query Parameters: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
               - Pydantic Schemas: python/drill-down/fastapi/ultimate-fastapi-tutorial/part-07-database/app/crud/base.md
