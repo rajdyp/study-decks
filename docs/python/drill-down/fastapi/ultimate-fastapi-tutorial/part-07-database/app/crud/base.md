@@ -66,8 +66,7 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
 ```
 
 
-``` md
-??? note
+??? note annotate 
 
     Title: CRUD Base Implementation with Type Hints
     
@@ -115,15 +114,3 @@ class CRUDBase(Generic[ModelType, CreateSchemaType, UpdateSchemaType]):
     It is used to declare a placeholder for a type that will be specified later.
     It allows us to create functions or classes that can work with different types without specifying the exact type until it is used.
     TypeVar` can have an optional bound parameter, which restricts the type to a particular base class or type.
-```
-
-
-
-!!! note annotate "Phasellus posuere in sem ut cursus (1)"
-
-    Lorem ipsum dolor sit amet, (2) consectetur adipiscing elit. Nulla et
-    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
-    purus auctor massa, nec semper lorem quam in massa.
-
-1.  :man_raising_hand: I'm an annotation!
-2.  :woman_raising_hand: I'm an annotation as well!
