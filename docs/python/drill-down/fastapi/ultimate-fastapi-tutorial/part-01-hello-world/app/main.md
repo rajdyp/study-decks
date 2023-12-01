@@ -69,4 +69,4 @@ if __name__ == "__main__":  # (5)
     Note:
     The provided code is a basic example and can be extended to include more complex API routes and functionality.
 
-1.  `APIRouter` is used to modularize and organize routes in a FastAPI application, providing better code structure, maintainability, and reusability as the application grows in complexity.
+1.  `APIRouter` provides benefits like modularization, route prefixing, dependency injection, reusability, etc.
