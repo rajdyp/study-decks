@@ -1,32 +1,36 @@
 ``` py
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter  # (1)
 
+# Create a FastAPI instance with a title and specify the OpenAPI URL
+app = FastAPI(title="Recipe API", openapi_url="/openapi.json")  # (2)
 
-app = FastAPI(title="Recipe API", openapi_url="/openapi.json")  # (1)
-
+# Create an APIRouter instance to organize API routes
 api_router = APIRouter()
 
-
+# Define a route on the APIRouter for the root endpoint ("/") with a GET method and a status code of 200
 @api_router.get("/", status_code=200)
-def root() -> dict:
+def root() -> dict:  # (3)
     """
     Root GET
     """
     return {"msg": "Hello, World!"}
 
+# Include the APIRouter into the main FastAPI application
+app.include_router(api_router)  # (4)
 
-app.include_router(api_router)
-
-
-if __name__ == "__main__":
+# Check if the script is being run as the main program
+if __name__ == "__main__":  # (5)
     # Use this for debugging purposes only
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8001, log_level="debug")
 ```
 
-1.  FastAPI will automatically generate and expose the OpenAPI documentation for our API at the specified path (`/openapi.json`).
-
+1.  `APIRouter` is used to modularize and organize routes in a FastAPI application, providing better code structure, maintainability, and reusability as the application grows in complexity.
+2.  FastAPI will automatically generate and expose the OpenAPI documentation for our API at the specified path (`/openapi.json`).
+3.  Path operator function (as it is associated with a specific path and HTTP method)
+4.  `app.include_router(api_router)` integrates the routes defined in `api_router` into the main FastAPI application, making those routes accessible through the application.
+5.  The `if __name__ == "__main__":` check in a Python script is used to determine whether the script is being run as the main program or if it's being imported as a module into another script.
 
 ??? note annotate 
 
