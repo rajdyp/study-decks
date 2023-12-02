@@ -1,20 +1,29 @@
-??? note annotate "Kubernetes architecture"
+??? question annotate "Kubernetes architecture"
 
     Kubernetes is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications.
     
     Master Components:
+    
     1. API Server (1)
+    
     2. etcd (2)
+    
     3. Controller Manager (3)
+    
     4. Scheduler (4)
     
     Node Components:
+    
     1. Kubelet (5)
+    
     2. Container Runtime (6)
+    
     3. Kube Proxy (7)
+    
     4. Pod (8)
 
     Add-ons:
+    
     1. DNS (9)
 
 1.  The API server is the central component that exposes the Kubernetes API. It acts as the frontend for the Kubernetes control plane. All administrative tasks and communication with the cluster are conducted through the API server.
