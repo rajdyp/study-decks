@@ -1,3 +1,10 @@
+??? question annotate "What is Kubernetes?"
+
+    Kubernetes is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications.
+
+<!-- end of question -->
+
+
 ??? question annotate "Kubernetes architecture"
 
     Kubernetes is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications.
@@ -39,4 +46,5 @@
 9.  A pod is the smallest deployable unit in Kubernetes and represents a single instance of a running process in a cluster. A pod can contain one or more containers sharing the same network namespace and storage.
 10.  Kubernetes provides a DNS add-on for service discovery within the cluster. It allows pods to communicate with each other using names rather than hard-coded IP addresses.
 
+<!-- end of question -->
 
