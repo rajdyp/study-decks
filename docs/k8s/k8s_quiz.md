@@ -52,10 +52,17 @@
 8.  - Network proxy, responsible for managing network connectivity.
     - Enables communication between pods, services, and external entities.
     - Provides load balancing for services.
-9.  - Smallest deployable unit and the basic building block for application deployment.
+9.  - Smallest deployable unit and the basic building block in Kubernetes.
     - A pod can contain one or more containers sharing the same network namespace and storage.
 10. - Provides DNS-based service discovery.
     - Allows services to be accessed by their DNS names.
 11. - Manages external access to services within the cluster.
+
 <!-- end of question -->
 
+
+??? question annotate "Why pods are considered the basic building blocks in Kubernetes?"
+
+    - Pods provide a way to group and manage containers that need to work together allowing them to be treated as a single unit of deployment.
+
+<!-- end of question -->
