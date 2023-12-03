@@ -7,31 +7,31 @@
 
 ??? question annotate "Kubernetes architecture"
 
-    === "Master Components"
+    Master Components:
     
-        1. kube-apiserver (1)
+    1. kube-apiserver (1)
     
-        2. etcd (2)
+    2. etcd (2)
     
-        3. kube-controller-manager (3)
+    3. kube-controller-manager (3)
     
-        4. kube-scheduler (4)
+    4. kube-scheduler (4)
 
-        5. cloud-controller-manager (5)
+     5. cloud-controller-manager (5)
     
-    === "Node Components"
+    Node Components:
     
-        1. kubelet (6)
+    1. kubelet (6)
     
-        2. Container Runtime (7)
+    2. Container Runtime (7)
     
-        3. kube-proxy (8)
+    3. kube-proxy (8)
     
-        4. Pod (9)
+    4. Pod (9)
 
-    === "Add-ons"
+    Add-ons:
     
-        1. DNS (10)
+    1. DNS (10)
 
 1.  The API server is the central component that exposes the Kubernetes API. It acts as the frontend for the Kubernetes control plane. All administrative tasks and communication with the cluster are conducted through the API server.
 2.  etcd is a distributed key-value store that serves as the cluster's primary data store for all configuration data. It stores the cluster state and configuration, ensuring consistency and high availability. The API server interacts with etcd to read or write cluster state information.
