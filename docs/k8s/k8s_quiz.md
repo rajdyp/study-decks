@@ -40,7 +40,7 @@
 2.  - Consistent and highly-available key value store.
     - Stores cluster state and configuration data.
 3.  - Manages controller processes.
-    - Controllers are responsible for maintaining the desired state, such as deploying and scaling applications.
+    - Controllers are responsible for maintaining the desired state of the cluster.
 4.  - Watches for newly created Pods and selects a node for them to run on.
 5.  - Serves as an interface between Kubernetes and the cloud provider's APIs.
 6.  - An agent that runs on each node in the cluster.
@@ -53,7 +53,7 @@
     - Provides load balancing for services.
 9.  - Smallest deployable unit in Kubernetes.
     - A pod can contain one or more containers sharing the same network namespace and storage.
-10. - Supports service discovery.
+10. - Provides DNS-based service discovery.
     - Allows services to be accessed by their DNS names.
 
 <!-- end of question -->
