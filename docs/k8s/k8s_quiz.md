@@ -34,6 +34,7 @@
     Add-ons:
     
     1. DNS (10)
+    2. Ingress Controller (11)
 
 1.  - Central component that exposes the Kubernetes API.
     - Acts as the frontend for the Kubernetes control plane.
@@ -55,6 +56,6 @@
     - A pod can contain one or more containers sharing the same network namespace and storage.
 10. - Provides DNS-based service discovery.
     - Allows services to be accessed by their DNS names.
-
+11. - Manages external access to services within the cluster.
 <!-- end of question -->
 
