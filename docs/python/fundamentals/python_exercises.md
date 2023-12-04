@@ -16,3 +16,51 @@ z = False
     ```
 
 <!-- end of question -->
+
+
+String exercises
+
+``` yaml
+- Create a string `Hello, World!`
+- Just print `,` from the string
+- Get the characters from position 2 to position 5 (not included)
+- Print only the characters at even position
+- Replace `"H"` with `"Y"`
+- Split 'My name is Rajdeep' to a list of substrings
+- Remove any whitespace from beginning or end of `" Hello, World! "`
+- Combine a list of strings `["ab", "cd", "ef"]` with an empty string delimitor
+```
+
+??? example annotate "Solution"
+
+    ``` py
+    print('\nCreate a string `Hello, World!`')
+    mystr = "Hello, World!"
+    print(mystr)
+
+    print('\nJust print `,` from the string')
+    print(mystr[5])
+
+    print('\nGet the characters from position 2 to position 5 (not included)')
+    print(mystr[1:5])
+
+    print('\nPrint only the characters at even position')
+    print(mystr[::2])
+
+    print('\nReplace `"H"` with `"Y"`')
+    print(mystr.replace("H", "Y"))
+
+    print('\nSplit "My name is Rajdeep" to a list of substrings')
+    mystr = "My name is Rajdeep"
+    print(mystr.split())
+
+    print('\nRemove any whitespace from beginning or end of `" Hello, World! "`')
+    mystr = " Hello, World! "
+    print(mystr.strip())
+
+    print('\nCombine a list of strings `["ab", "cd", "ef"]` with an empty string delimitor')
+    str_list = ["ab", "cd", "ef"]
+    print(" ".join(str_list))
+    ```
+
+<!-- end of question -->
