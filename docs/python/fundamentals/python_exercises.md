@@ -35,28 +35,28 @@ String exercises
 
     ``` py
     print('\nCreate a string `Hello, World!`')
-    mystr = "Hello, World!"
-    print(mystr)
+    my_str = "Hello, World!"
+    print(my_str)
 
     print('\nJust print `,` from the string')
-    print(mystr[5])
+    print(my_str[5])
 
     print('\nGet the characters from position 2 to position 5 (not included)')
-    print(mystr[1:5])
+    print(my_str[1:5])
 
     print('\nPrint only the characters at even position')
-    print(mystr[::2])
+    print(my_str[::2])
 
     print('\nReplace `"H"` with `"Y"`')
-    print(mystr.replace("H", "Y"))
+    print(my_str.replace("H", "Y"))
 
     print('\nSplit "My name is Rajdeep" to a list of substrings')
-    mystr = "My name is Rajdeep"
-    print(mystr.split())
+    my_str = "My name is Rajdeep"
+    print(my_str.split())
 
     print('\nRemove any whitespace from beginning or end of `" Hello, World! "`')
-    mystr = " Hello, World! "
-    print(mystr.strip())
+    my_str = " Hello, World! "
+    print(my_str.strip())
 
     print('\nCombine a list of strings `["ab", "cd", "ef"]` with an empty string delimitor')
     str_list = ["ab", "cd", "ef"]
