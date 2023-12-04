@@ -66,13 +66,15 @@
 
 ??? question annotate "Why pods are considered the basic building blocks in Kubernetes?"
 
-    - Pods encapsulate and co-locate one or more containers, providing a unified unit for deployment, scaling, and resource sharing.
+    Pods encapsulate and co-locate one or more containers, providing a unified unit for deployment, scaling, and resource sharing.
 
 <!-- end of question -->
 
 
 ??? question annotate "Discuss the phases a pod goes through?"
 
+    Pod phase:
+    
     - Pending (1)
     - Running (2)
     - Succeeded (3)
