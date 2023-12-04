@@ -73,7 +73,7 @@
 
 ??? question annotate "Discuss the phases a pod goes through?"
 
-    Pod phase:
+    Pod phases:
     
     - Pending (1)
     - Running (2)
