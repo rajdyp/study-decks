@@ -1,6 +1,6 @@
 Perform below multi line assignment in a single line.
 
-``` yaml
+``` md
 n = 0.125
 m = "abc"
 z = False
@@ -20,7 +20,7 @@ z = False
 
 String exercises
 
-``` yaml
+``` md
 - Create a string `Hello, World!`
 - Just print `,` from the string
 - Get the characters from position 2 to position 5 (not included)
@@ -68,10 +68,10 @@ String exercises
 
 List exercises
 
-``` yaml
+``` md
 - Create a list of names containing `"John", "Alice", "Sarah", "Rajna", "George"` using list() constructor.
 - Print number of items in the list
-- Just print `"Alice", "Sarah", Rajna`
+- Print `"Alice", "Sarah", Rajna` from the list
 - Print `"George"` from the list
 - Print `"Sarah"` from the list
 - Replace `"John"` with `"Jenny"`
@@ -82,8 +82,8 @@ List exercises
 - Remove element at index 2
 - Remove the last element
 - Add list `fruits = ["apple", "banana", "cherry", "kiwi"]` to names
-- From above list, print all fruits that has `a` in its name using list comprehension
-- Reverse the order of the fruits list
+- From list `fruits = ["apple", "banana", "cherry", "kiwi"]`, print all fruits that has `a` in its name using list comprehension
+- Reverse the order of list `fruits = ["apple", "banana", "cherry", "kiwi"]`
 - Sort list numerically `num = [100, 50, 65, 82, 23]`
 - Sort above list in descending order
 - Join fruits and num list to a new list
@@ -101,7 +101,7 @@ List exercises
     print('\n2. Print number of items in the list\n')
     print(f"No of items: {len(names)}")
 
-    print('\n3. Just print `"Alice", "Sarah", Rajna`\n')
+    print('\n3. Print `"Alice", "Sarah", Rajna` from the list\n')
     print(names[1:4])
 
     print('\n4. Print `"George"` from the list\n')
@@ -143,11 +143,11 @@ List exercises
     names.extend(fruits)
     print(names)
 
-    print('\n14. From above list, print all fruits that has `a` in its name using list comprehension\n')
+    print('\n14. From list `fruits = ["apple", "banana", "cherry", "kiwi"]`, print all fruits that has `a` in its name using list comprehension\n')
     fruits = ["apple", "banana", "cherry", "kiwi"]
     print([fruit for fruit in fruits if "a" in fruit])
 
-    print('\n15. Reverse the order of the fruits list\n')
+    print('\n15. Reverse the order of list `fruits = ["apple", "banana", "cherry", "kiwi"]`\n')
     fruits.reverse()
     print(fruits)
 
