@@ -66,6 +66,23 @@
 
 ??? question annotate "Why pods are considered the basic building blocks in Kubernetes?"
 
-    - Pods provide a way to group and manage containers that need to work together allowing them to be treated as a single unit of deployment, scaling, and resource allocation.
+    - Pods encapsulate and co-locate one or more containers, providing a unified unit for deployment, scaling, and resource sharing.
+
+<!-- end of question -->
+
+
+??? question annotate "Discuss the phases a pod goes through?"
+
+    - Pending (1)
+    - Running (2)
+    - Succeeded (3)
+    - Failed (4)
+    - Unknown (5)
+
+1.  The Pod has been accepted by the Kubernetes cluster but is awaiting resource allocation, scheduling, and container image downloads.
+2.  The Pod has been assigned to a node, and all containers have been created, and at least one container is currently running or in the process of starting or restarting.
+3.  All containers in the Pod have terminated in success, and will not be restarted.
+4.  At least one container in the Pod has terminated with a failure.
+5.  For some reason the state of the Pod cannot be determined.
 
 <!-- end of question -->
