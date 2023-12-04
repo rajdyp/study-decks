@@ -64,3 +64,122 @@ String exercises
     ```
 
 <!-- end of question -->
+
+
+List exercises
+
+``` yaml
+- Create a list of names containing `"John", "Alice", "Sarah", "Rajna", "George"` using list() constructor.
+- Print number of items in the list
+- Just print `"Alice", "Sarah", Rajna`
+- Print `"George"` from the list
+- Print `"Sarah"` from the list
+- Replace `"John"` with `"Jenny"`
+- Replace `"Jenny", "Alice"` with `"John", "Maya"`
+- Add `"Simon"`
+- Add `"Betty"` before `"Sarah"`
+- Remove `"John"`
+- Remove element at index 2
+- Remove the last element
+- Add list `fruits = ["apple", "banana", "cherry", "kiwi"]` to names
+- From above list, print all fruits that has `a` in its name using list comprehension
+- Reverse the order of the fruits list
+- Sort list numerically `num = [100, 50, 65, 82, 23]`
+- Sort above list in descending order
+- Join fruits and num list to a new list
+- Clear fruits list
+- Delete num list
+```
+
+??? example annotate "Solution"
+
+    ``` py
+    print('\n1. Create a list of names containing `"John", "Alice", "Sarah", "Rajna", "George"` using list() constructor\n')
+    names = list(("John", "Alice", "Sarah", "Rajna", "George"))
+    print(names)
+
+    print('\n2. Print number of items in the list\n')
+    print(f"No of items: {len(names)}")
+
+    print('\n3. Just print `"Alice", "Sarah", Rajna`\n')
+    print(names[1:4])
+
+    print('\n4. Print `"George"` from the list\n')
+    print(names[-1])
+
+    print('\n5. Print `"Sarah"` from the list\n')
+    print(names[2])
+
+    print('\n6. Replace `"John"` with `"Jenny"`\n')
+    names[0] = "Jenny"
+    print(names)
+
+    print('\n7. Replace `"Jenny", "Alice"` with `"John", "Maya"`\n')
+    names[0:2] = ["John", "Maya"]
+    print(names)
+
+    print('\n8. Add `"Simon"`\n')
+    names.append("Simon")
+    print(names)
+
+    print('\n9. Add `"Betty"` before `"Sarah"`\n')
+    names.insert(2, "Betty")
+    print(names)
+
+    print('\n10. Remove `"John"`\n')
+    names.remove("John")
+    print(names)
+
+    print('\n11. Remove element at index 2\n')
+    names.remove(names[2])
+    print(names)
+
+    print('\n12. Remove the last element\n')
+    names.pop()
+    print(names)
+
+    print('\n13. Add list `fruits = ["apple", "banana", "cherry", "kiwi"]` to names\n')
+    fruits = ["apple", "banana", "cherry", "kiwi"]
+    names.extend(fruits)
+    print(names)
+
+    print('\n14. From above list, print all fruits that has `a` in its name using list comprehension\n')
+    fruits = ["apple", "banana", "cherry", "kiwi"]
+    print([fruit for fruit in fruits if "a" in fruit])
+
+    print('\n15. Reverse the order of the fruits list\n')
+    fruits.reverse()
+    print(fruits)
+
+    fruits.sort(reverse=True)
+    print(fruits)
+
+    print('\n16. Sort list numerically `num = [100, 50, 65, 82, 23]`\n')
+    num = [100, 50, 65, 82, 23]
+    num.sort()
+    print(num)
+
+    print('\n17. Sort above list in descending order\n')
+    num = [100, 50, 65, 82, 23]
+    num.sort(reverse=True)
+    print(num)
+
+    print('\n18. Join fruits and num list to a new list\n')
+    new_list = fruits + num
+    print(new_list)
+
+    fruits.extend(num)
+    print(fruits)
+
+    print('\n19. Clear fruits list\n')
+    print(fruits)
+    fruits.clear()
+    print(fruits)
+
+    print('\n20. Delete num list\n')
+    print(num)
+    del num
+    print(num)
+    ```
+
+<!-- end of question -->
