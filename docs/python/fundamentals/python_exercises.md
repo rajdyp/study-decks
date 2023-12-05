@@ -20,7 +20,6 @@ z = False
 
 String exercises
 
-``` md
 - Create a string `Hello, World!`
 - Just print `,` from the string
 - Get the characters from position 2 to position 5 (not included)
@@ -29,7 +28,6 @@ String exercises
 - Split 'My name is Rajdeep' to a list of substrings
 - Remove any whitespace from beginning or end of `" Hello, World! "`
 - Combine a list of strings `["ab", "cd", "ef"]` with an empty string delimitor
-```
 
 ??? example annotate "Solution"
 
@@ -78,8 +76,8 @@ List exercises
 - Create a list of names containing `"John", "Alice", "Sarah", "Rajna", "George"` using list() constructor
 - Print number of items in the list
 - Print `"Alice", "Sarah", Rajna` from the list
-- Print `"George"` from the list
-- Print `"Sarah"` from the list
+- Retrieve `"George"`
+- Retrieve `"Sarah"`
 - Replace `"John"` with `"Jenny"`
 - Replace `"Jenny", "Alice"` with `"John", "Maya"`
 - Add `"Simon"`
@@ -120,11 +118,11 @@ List exercises
     print(names[1:4])
 
 
-    print('\n4. Print `"George"` from the list\n')
+    print('\n4. Retrieve `"George"`\n')
     print(names[-1])
 
 
-    print('\n5. Print `"Sarah"` from the list\n')
+    print('\n5. Retrieve `"Sarah"`\n')
     print(names[2])
 
 
@@ -221,7 +219,6 @@ List exercises
 
 Tuple exercises
 
-``` md
 - Create a tuple of names`"John", "Sarah", "Alice"` using tuple() constructor
 - Create a tuple of single name `"Maya"`
 - Add name to names
@@ -231,7 +228,6 @@ Tuple exercises
 - Is there any workaround for add and remove?
 - Unpack tuple `fruits = ("apple", "banana", "kiwi")` as per their color and print their values
 - Delete fruits tuple
-```
 
 ??? example annotate "Solution"
 
