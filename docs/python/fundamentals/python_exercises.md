@@ -285,3 +285,28 @@ Tuple exercises
     ```
 
 <!-- end of question -->
+
+
+From below nested collections:
+
+- Retrieve `('Eternal Sunshine of the Spotless Mind', 2004)`
+- Retrieve `Eternal Sunshine of the Spotless Mind`
+
+``` md
+movies = [
+    ('Eternal Sunshine of the Spotless Mind', 2004),
+    ('Memento', 2000)
+]
+```
+
+??? example annotate "Solution"
+
+    ``` py
+    print("1. Retrieve `('Eternal Sunshine of the Spotless Mind', 2004)`")
+    print(movies[0])
+
+    print('\n2. Retrieve `Eternal Sunshine of the Spotless Mind`')
+    print(movies[0][0])
+    ```
+
+<!-- end of question -->
