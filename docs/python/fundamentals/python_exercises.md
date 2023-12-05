@@ -75,7 +75,6 @@ String exercises
 
 List exercises
 
-``` md
 - Create a list of names containing `"John", "Alice", "Sarah", "Rajna", "George"` using list() constructor
 - Print number of items in the list
 - Print `"Alice", "Sarah", Rajna` from the list
@@ -96,7 +95,6 @@ List exercises
 - Join fruits and num list to a new list
 - Clear fruits list
 - Delete num list
-```
 
 ??? example annotate "Solution"
 
