@@ -34,31 +34,38 @@ String exercises
 ??? example annotate "Solution"
 
     ``` py
-    print('\nCreate a string `Hello, World!`')
+    print('\n1. Create a string `Hello, World!`')
     my_str = "Hello, World!"
     print(my_str)
 
-    print('\nJust print `,` from the string')
+
+    print('\n2. Just print `,` from the string')
     print(my_str[5])
 
-    print('\nGet the characters from position 2 to position 5 (not included)')
+
+    print('\n3. Get the characters from position 2 to position 5 (not included)')
     print(my_str[1:5])
 
-    print('\nPrint only the characters at even position')
+
+    print('\n4. Print only the characters at even position')
     print(my_str[::2])
 
-    print('\nReplace `"H"` with `"Y"`')
+
+    print('\n5. Replace `"H"` with `"Y"`')
     print(my_str.replace("H", "Y"))
 
-    print('\nSplit "My name is Rajdeep" to a list of substrings')
+
+    print('\n6. Split "My name is Rajdeep" to a list of substrings')
     my_str = "My name is Rajdeep"
     print(my_str.split())
 
-    print('\nRemove any whitespace from beginning or end of `" Hello, World! "`')
+
+    print('\n7. Remove any whitespace from beginning or end of `" Hello, World! "`')
     my_str = " Hello, World! "
     print(my_str.strip())
 
-    print('\nCombine a list of strings `["ab", "cd", "ef"]` with an empty string delimitor')
+
+    print('\n8. Combine a list of strings `["ab", "cd", "ef"]` with an empty string delimitor')
     str_list = ["ab", "cd", "ef"]
     print(" ".join(str_list))
     ```
@@ -106,37 +113,47 @@ List exercises
     names.append("George")
     print(names)
 
+
     print('\n2. Print number of items in the list\n')
     print(f"No of items: {len(names)}")
+
 
     print('\n3. Print `"Alice", "Sarah", Rajna` from the list\n')
     print(names[1:4])
 
+
     print('\n4. Print `"George"` from the list\n')
     print(names[-1])
 
+
     print('\n5. Print `"Sarah"` from the list\n')
     print(names[2])
+
 
     print('\n6. Replace `"John"` with `"Jenny"`\n')
     names[0] = "Jenny"
     print(names)
 
+
     print('\n7. Replace `"Jenny", "Alice"` with `"John", "Maya"`\n')
     names[0:2] = ["John", "Maya"]
     print(names)
+
 
     print('\n8. Add `"Simon"`\n')
     names.append("Simon")
     print(names)
 
+
     print('\n9. Add `"Betty"` before `"Sarah"`\n')
     names.insert(2, "Betty")
     print(names)
 
+
     print('\n10. Remove `"John"`\n')
     names.remove("John")
     print(names)
+
 
     print('\n11. Remove element at index 2\n')
     names = ['Maya', 'Betty', 'Sarah', 'Rajna', 'George', 'Simon']
@@ -147,18 +164,22 @@ List exercises
     names.pop(2)
     print(names)
 
+
     print('\n12. Remove the last element\n')
     names.pop()
     print(names)
+
 
     print('\n13. Add list `fruits = ["apple", "banana", "cherry", "kiwi"]` to names\n')
     fruits = ["apple", "banana", "cherry", "kiwi"]
     names.extend(fruits)
     print(names)
 
+
     print('\n14. From `fruits = ["apple", "banana", "cherry", "kiwi"]`, print all fruits that has `a` in its name using list comprehension\n')
     fruits = ["apple", "banana", "cherry", "kiwi"]
     print([fruit for fruit in fruits if "a" in fruit])
+
 
     print('\n15. Reverse the order of list `fruits = ["apple", "banana", "cherry", "kiwi"]`\n')
     fruits.reverse()
@@ -167,27 +188,29 @@ List exercises
     fruits.sort(reverse=True)
     print(fruits)
 
+
     print('\n16. Sort list numerically `num = [100, 50, 65, 82, 23]`\n')
     num = [100, 50, 65, 82, 23]
     num.sort()
     print(num)
+
 
     print('\n17. Sort above list in descending order\n')
     num = [100, 50, 65, 82, 23]
     num.sort(reverse=True)
     print(num)
 
+
     print('\n18. Join fruits and num list to a new list\n')
     new_list = fruits + num
     print(new_list)
 
-    fruits.extend(num)
-    print(fruits)
 
     print('\n19. Clear fruits list\n')
     print(fruits)
     fruits.clear()
     print(fruits)
+
 
     print('\n20. Delete num list\n')
     print(num)
