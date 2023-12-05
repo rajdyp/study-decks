@@ -1,4 +1,4 @@
-Perform below multi line assignment in a single line.
+**Perform below multi line assignment in a single line.**
 
 ``` md
 n = 0.125
@@ -18,7 +18,7 @@ z = False
 <!-- end of question -->
 
 
-String exercises
+**String exercises**
 
 - Create a string `Hello, World!`
 - Just print `,` from the string
@@ -71,7 +71,7 @@ String exercises
 <!-- end of question -->
 
 
-List exercises
+**List exercises**
 
 - Create a list of names containing `"John", "Alice", "Sarah", "Rajna", "George"` using list() constructor
 - Print number of items in the list
@@ -217,7 +217,7 @@ List exercises
 <!-- end of question -->
 
 
-Tuple exercises
+**Tuple exercises**
 
 - Create a tuple of names`"John", "Sarah", "Alice"` using tuple() constructor
 - Create a tuple of single name `"Maya"`
@@ -287,7 +287,7 @@ Tuple exercises
 <!-- end of question -->
 
 
-From below nested collections:
+**From below nested collections:**
 
 - Retrieve `('Eternal Sunshine of the Spotless Mind', 2004)`
 - Retrieve `Eternal Sunshine of the Spotless Mind`
