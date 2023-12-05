@@ -82,7 +82,7 @@ List exercises
 - Remove element at index 2
 - Remove the last element
 - Add list `fruits = ["apple", "banana", "cherry", "kiwi"]` to names
-- From list `fruits = ["apple", "banana", "cherry", "kiwi"]`, print all fruits that has `a` in its name using list comprehension
+- From `fruits = ["apple", "banana", "cherry", "kiwi"]`, print all fruits that has `a` in its name using list comprehension
 - Reverse the order of list `fruits = ["apple", "banana", "cherry", "kiwi"]`
 - Sort list numerically `num = [100, 50, 65, 82, 23]`
 - Sort above list in descending order
@@ -143,7 +143,7 @@ List exercises
     names.extend(fruits)
     print(names)
 
-    print('\n14. From list `fruits = ["apple", "banana", "cherry", "kiwi"]`, print all fruits that has `a` in its name using list comprehension\n')
+    print('\n14. From `fruits = ["apple", "banana", "cherry", "kiwi"]`, print all fruits that has `a` in its name using list comprehension\n')
     fruits = ["apple", "banana", "cherry", "kiwi"]
     print([fruit for fruit in fruits if "a" in fruit])
 
