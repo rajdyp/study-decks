@@ -76,7 +76,7 @@ String exercises
 List exercises
 
 ``` md
-- Create a list of names containing `"John", "Alice", "Sarah", "Rajna", "George"` using list() constructor.
+- Create a list of names containing `"John", "Alice", "Sarah", "Rajna", "George"` using list() constructor
 - Print number of items in the list
 - Print `"Alice", "Sarah", Rajna` from the list
 - Print `"George"` from the list
@@ -216,6 +216,78 @@ List exercises
     print(num)
     del num
     print(num)
+    ```
+
+<!-- end of question -->
+
+
+Tuple exercises
+
+``` md
+- Create a tuple of names`"John", "Sarah", "Alice"` using tuple() constructor
+- Create a tuple of single name `"Maya"`
+- Add name to names
+- Retrieve `"Sarah"`
+- Add `"Simon"`
+- Rmove `"John"`
+- Is there any workaround for add and remove?
+- Unpack tuple `fruits = ("apple", "banana", "kiwi")` as per their color and print their values
+- Delete fruits tuple
+```
+
+??? example annotate "Solution"
+
+    ``` py
+    print('\n1. Create a tuple of names`"John", "Sarah", "Alice"` using tuple() constructor\n')
+    names = tuple(("John", "Sarah", "Alice"))
+    print(names)
+
+
+    print('\n2. Create a tuple of single name `"Maya"`\n')
+    name = ("Maya",)
+    print(name)
+
+
+    print('\n3. Add name to names\n')
+    names += name
+    print(names)
+
+
+    print('\n4. Retrieve `"Sarah"`\n')
+    print(names[1])
+
+
+    print('\n5. Add `"Simon"``\n')
+    print("Cannot add items to a Tuple as it is immutable\n")
+
+
+    print('\n6. Rmove `"John"`\n')
+    print("Cannot remove items from a Tuple as it is immutable\n")
+
+
+    print('\nIs there any workaround for add and remove?\n')
+    print(names)
+    names = list(names)
+    names.append("Simon")
+    print(tuple(names))
+
+    names = list(names)
+    names.remove("Simon")
+    print(tuple(names))
+
+
+    print('\n7. Unpack tuple `fruits = ("apple", "banana", "cherry")` as per their color and print their values\n')
+    fruits = ("apple", "banana", "cherry")
+    green, yellow, red = fruits
+    print(f"Green : {green}")
+    print(f"Yellow : {yellow}")
+    print(f"Red : {red}")
+
+
+    print('\n8. Delete fruits tuple\n')
+    print(fruits)
+    del fruits
+    print(fruits)
     ```
 
 <!-- end of question -->
