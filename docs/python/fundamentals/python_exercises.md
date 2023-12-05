@@ -98,6 +98,14 @@ List exercises
     names = list(("John", "Alice", "Sarah", "Rajna", "George"))
     print(names)
 
+    names = list()
+    names.append("John")
+    names.append("Alice")
+    names.append("Sarah")
+    names.append("Rajna")
+    names.append("George")
+    print(names)
+
     print('\n2. Print number of items in the list\n')
     print(f"No of items: {len(names)}")
 
@@ -131,7 +139,12 @@ List exercises
     print(names)
 
     print('\n11. Remove element at index 2\n')
+    names = ['Maya', 'Betty', 'Sarah', 'Rajna', 'George', 'Simon']
     names.remove(names[2])
+    print(names)
+
+    names = ['Maya', 'Betty', 'Sarah', 'Rajna', 'George', 'Simon']
+    names.pop(2)
     print(names)
 
     print('\n12. Remove the last element\n')
