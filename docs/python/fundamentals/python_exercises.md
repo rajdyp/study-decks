@@ -1,6 +1,6 @@
 Perform below multi line assignment in a single line.
 
-``` md
+``` yaml
 n = 0.125
 m = "abc"
 z = False
@@ -20,7 +20,7 @@ z = False
 
 String exercises
 
-``` md
+``` yaml
 - Create a string `Hello, World!`
 - Just print `,` from the string
 - Get the characters from position 2 to position 5 (not included)
@@ -68,7 +68,7 @@ String exercises
 
 List exercises
 
-``` md
+``` yaml
 - Create a list of names containing `"John", "Alice", "Sarah", "Rajna", "George"` using list() constructor.
 - Print number of items in the list
 - Print `"Alice", "Sarah", Rajna` from the list
