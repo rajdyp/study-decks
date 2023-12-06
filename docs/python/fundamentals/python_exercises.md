@@ -310,3 +310,125 @@ movies = [
     ```
 
 <!-- end of question -->
+
+
+**Dictionary exercises**
+
+- Create a dictionary called `student`, wherein student name is `"John Smith"` and his grades are `88, 76, 92, 85, 69`
+- Print student grades
+- Add student age = 14
+- Print `John Smith is 14 years old and his grades are 88, 76, 92, 85, 69`    # with and without for loop
+- Create a dictionary called `school` using dict() constructor with school name and location'
+- Merge student dictionary with school dictionary     # check name key
+- Update student age to 18
+- Delete grades
+- List all keys
+- List all values
+- List all items
+- Iterate and print all keys
+- Iterate and print all values
+- Iterate and print both keys value pairs
+- Remove `location`
+- Remove last item
+- Remove all items
+- Delete student dictionary
+
+??? example annotate "Solution"
+
+    ``` py
+    print('\n 1. Create a dictionary called `student`, wherein student name is `"John Smith"` and his grades are `88, 76, 92, 85, 69`')
+    student = {
+        "name": "John Smith",
+        "grades": [88, 76, 92, 85, 69]
+    }
+    print(student)
+
+
+    print('\n 2. Print student grades')
+    print(student["grades"])
+
+
+    print('\n 3. Add student age = 14')
+    student["age"] = 14
+    print(student)
+
+
+    print('\n 4. Print `John Smith is 14 years old and his grades are 88, 76, 92, 85, 69`')
+    print(f'{student["name"]} is {student["age"]} years old and his grades are {", ".join(map(str, student["grades"]))}')
+    print(f"John Smith is {student['age']} years old and his grades are {' '.join(str(grade) for grade in student['grades'])}")
+
+
+    print('\n 5. Create a dictionary called `school` using dict() constructor with school name and location')
+    school = dict({"name": "LES", "location": "Mirik"})
+    print(school)
+
+
+    print('\n 6. Merge student dictionary with school dictionary     # check name key')
+    student.update(school)
+    print(student)
+
+    # merge operator (|)
+    student = student | school
+    print(student)
+
+
+    print('\n 7. Update student age to 18')
+    student["age"] = 18
+    print(student)
+
+
+    print('\n 8. Delete grades')
+    del student["grades"]
+    print(student)
+
+
+    print('\n 9. List all keys')
+    print(student.keys())
+
+
+    print('\n 10. List all values')
+    print(student.values())
+
+
+    print('\n 11. List all items')
+    print(student.items())
+
+
+    print('\n 12. Iterate and print all keys')
+    for key in student.keys():
+        print(key)
+
+
+    print('\n 13. Iterate and print all values')
+    for value in student.values():
+        print(value)
+
+
+    print('\n 14. Iterate and print both keys value pairs')
+    for key, value in student.items():
+        print(f"{key} : {value}")
+
+
+    print('\n 15. Remove `location`')
+    print(student.pop("location"))
+    print(student)
+
+
+    print('\n 16. Remove last item')
+    print(f"Last item: {student.popitem()}")
+    print(student)
+
+
+    print('\n 17. Remove all items')
+    print(student)
+    student.clear()
+    print(student)
+
+
+    print('\n 18. Delete student dictionary')
+    print(student)
+    del student
+    print(student)
+    ```
+
+<!-- end of question -->
