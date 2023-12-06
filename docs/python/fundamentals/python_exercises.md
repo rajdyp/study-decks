@@ -287,7 +287,7 @@ z = False
 <!-- end of question -->
 
 
-**From below nested collections:**
+**Nested collections:**
 
 - Retrieve `('Eternal Sunshine of the Spotless Mind', 2004)`
 - Retrieve `Eternal Sunshine of the Spotless Mind`
@@ -429,6 +429,69 @@ movies = [
     print(student)
     del student
     print(student)
+    ```
+
+<!-- end of question -->
+
+
+**Set exercises**
+
+- Create an empty set `set1`
+- Add three items `"apple", "banana", "cherry"`
+- Print `"apple"` 
+- Create a second set `set2` using set() constructor with at least one common item with the first set
+- Find the union, symmetric difference, and intersection of the two sets
+- Add set1 and set2
+- Remove `"pineapple"`
+- Remove any random item
+- Remove all items
+- Delete set1
+
+??? example annotate "Solution"
+
+    ``` py
+    print('\n1. Create an empty set `set1`')
+    set1 = set()
+    print(set1)
+
+    print('\n2. Add three items `"apple", "banana", "cherry"`')
+    set1.add("apple")
+    set1.add("banana")
+    set1.add("cherry")
+    print(set1)
+
+    print('\n3. Print `"apple"`')
+    print("Cannot access items in a set using index or key as it is unordered")
+
+    print('\n4. Create a second set `set2` using set() constructor with at least one common item with the first set')
+    set2 = set(("apple", "mango", "pineapple"))
+    print(set2)
+
+    print('\n5. Find the union, symmetric difference, and intersection of the two sets')
+    print(f"Union                   : {set1.union(set2)}")
+    print(f"Symmetric difference    : {set1.symmetric_difference(set2)}")
+    print(f"Intersection            : {set1.intersection(set2)}")
+
+    print('\n6. Add set1 and set2')
+    set1.update(set2)
+    print(set1)
+
+    print('\n7. Remove `"pineapple"`')
+    set1.remove("pineapple")
+    print(set1)
+
+    print('\n8. Remove any random item')
+    set1.pop()
+    print(set1)
+
+    print('\n9. Remove all items')
+    set1.clear()
+    print(set1)
+
+    print('\n10. Delete set1')
+    print(set1)
+    del set1
+    print(set1)
     ```
 
 <!-- end of question -->
