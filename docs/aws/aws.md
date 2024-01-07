@@ -1,6 +1,6 @@
 ## AWS Security, Identity, & Compliance services
 
-??? note annotate Identity and access management
+??? note annotate "Identity and access management"
 
     - AWS Identity and Access Management (IAM)
     - AWS IAM Identity Center (successor to SSO)
@@ -13,7 +13,7 @@
 <!-- end -->
 
 
-??? note annotate Detection and response
+??? note annotate "Detection and response"
 
     - Amazon GuardDuty
     - Amazon Inspector
@@ -29,7 +29,7 @@
 <!-- end -->
 
 
-??? note annotate Network and application protection
+??? note annotate "Network and application protection"
 
     - AWS Firewall Manager
     - AWS Network Firewall
@@ -41,7 +41,7 @@
 <!-- end -->
 
 
-??? note annotate Data protection
+??? note annotate "Data protection"
 
     - Amazon Macie
     - AWS Key Management Service (AWS KMS)
@@ -54,7 +54,7 @@
 <!-- end -->
 
 
-??? note annotate Compliance	
+??? note annotate "Compliance"
 
     - AWS Artifact
     - AWS Audit Manager
