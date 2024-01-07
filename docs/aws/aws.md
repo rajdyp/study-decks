@@ -60,3 +60,54 @@
     - AWS Audit Manager
 
 <!-- end -->
+
+
+## AWS networking and content delivery services
+
+??? note annotate "Network foundations"
+
+Amazon VPC
+AWS Transit Gateway
+AWS PrivateLink
+
+<!-- end -->
+
+
+??? note annotate "Application networking"
+
+Amazon VPC Lattice
+AWS AppMesh
+AWS API Gateway
+AWS Cloud Map
+Elastic Load Balancing
+
+<!-- end -->
+
+
+??? note annotate "Edge networking"
+
+Amazon CloudFront
+Amazon Route 53
+AWS Global Accelerator
+
+<!-- end -->
+
+
+??? note annotate "Hybrid connectivity"
+
+AWS Direct Connect
+AWS Site-to-Site VPN
+AWS Client VPN
+AWS Cloud WAN
+
+<!-- end -->
+
+
+??? note annotate "Network security"
+
+AWS Shield
+AWS WAF
+AWS Network Firewall
+AWS Firewall Manager
+
+<!-- end -->
