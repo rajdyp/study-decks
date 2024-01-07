@@ -20,7 +20,7 @@
     
     4. kube-scheduler (4)
 
-     5. cloud-controller-manager (5)
+    5. cloud-controller-manager (5)
     
     Node Components:
     
