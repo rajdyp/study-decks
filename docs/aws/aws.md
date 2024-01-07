@@ -111,3 +111,58 @@
     - AWS Firewall Manager
 
 <!-- end -->
+
+
+## AWS compute services
+
+??? note annotate "Instances (virtual machines)"
+
+    - Amazon Elastic Compute Cloud (EC2)
+    - Amazon EC2 Spot
+    - Amazon EC2 Autoscaling
+    - Amazon Lightsail Icon Amazon Lightsail
+    - AWS Batch
+
+<!-- end -->
+
+
+??? note annotate "Containers"
+
+    - Amazon Elastic Container Service (ECS)
+    - Amazon ECS Anywhere
+    - Amazon Elastic Container Registry (ECR)
+    - EKS Amazon Elastic Kubernetes Service (EKS)
+    - Amazon EKS Anywhere
+    - AWS Fargate
+    - AWS App Runner
+
+<!-- end -->
+
+
+??? note annotate "Serverless"
+
+    - AWS Lambda
+
+<!-- end -->
+
+
+??? note annotate "Edge and hybrid"
+
+    - Outposts AWS Outposts
+    - Snowball Edge AWS Snow Family
+    - Wavelength AWS Wavelength
+    - VMWare VMware Cloud on AWS
+    - Local Zones AWS Local Zones
+
+<!-- end -->
+
+
+??? note annotate "Cost and capacity management"
+
+    - Savings Plan AWS Savings Plan
+    - AWS Compute Optimizer
+    - AWS Elastic Beanstalk
+    - EC2 Image Builder
+    - Elastic Load Balancing (ELB)
+
+<!-- end -->
