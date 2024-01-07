@@ -66,48 +66,48 @@
 
 ??? note annotate "Network foundations"
 
-Amazon VPC
-AWS Transit Gateway
-AWS PrivateLink
+    - Amazon VPC
+    - AWS Transit Gateway
+    - AWS PrivateLink
 
 <!-- end -->
 
 
 ??? note annotate "Application networking"
 
-Amazon VPC Lattice
-AWS AppMesh
-AWS API Gateway
-AWS Cloud Map
-Elastic Load Balancing
+    - Amazon VPC Lattice
+    - AWS AppMesh
+    - AWS API Gateway
+    - AWS Cloud Map
+    - Elastic Load Balancing
 
 <!-- end -->
 
 
 ??? note annotate "Edge networking"
 
-Amazon CloudFront
-Amazon Route 53
-AWS Global Accelerator
+    - Amazon CloudFront
+    - Amazon Route 53
+    - AWS Global Accelerator
 
 <!-- end -->
 
 
 ??? note annotate "Hybrid connectivity"
 
-AWS Direct Connect
-AWS Site-to-Site VPN
-AWS Client VPN
-AWS Cloud WAN
+    - AWS Direct Connect
+    - AWS Site-to-Site VPN
+    - AWS Client VPN
+    - AWS Cloud WAN
 
 <!-- end -->
 
 
 ??? note annotate "Network security"
 
-AWS Shield
-AWS WAF
-AWS Network Firewall
-AWS Firewall Manager
+    - AWS Shield
+    - AWS WAF
+    - AWS Network Firewall
+    - AWS Firewall Manager
 
 <!-- end -->
