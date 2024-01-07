@@ -59,6 +59,14 @@ nav:
     - Istio:
       - Notes: istio/istio.md
       - CLI: istio/istio_cli.md
+  - Infra as Code:
+    - Terraform:
+      - Notes: terraform/terraform.md
+      - CLI: terraform/terraform_cli.md
+  - Cloud:
+    - AWS:
+      - Notes: aws/aws.md
+      - CLI: aws/aws_cli.md
 theme:
   name: material
   features:
