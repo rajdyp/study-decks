@@ -166,3 +166,47 @@
     - Elastic Load Balancing (ELB)
 
 <!-- end -->
+
+
+## AWS storage services
+
+??? note annotate "Object, file, and block storage"
+
+    - Amazon Simple Storage Service (S3)
+    - Amazon Elastic File System (EFS)
+    - Amazon FSx
+    - Amazon Elastic Block Store (EBS)
+    - Amazon File Cache
+
+<!-- end -->
+
+
+??? note annotate "Data migration"
+
+    - AWS DataSync
+    - AWS Snow Family
+
+<!-- end -->
+
+
+??? note annotate "Hybrid cloud storage and edge computing"
+
+    - AWS Storage Gateway
+    - AWS Snow Family
+
+<!-- end -->
+
+
+??? note annotate "Managed file transfer"
+
+    - AWS Transfer Family
+
+<!-- end -->
+
+
+??? note annotate "Disaster recovery and backup"
+
+    - AWS Elastic Disaster Recovery (DRS)
+    - AWS Backup
+
+<!-- end -->
