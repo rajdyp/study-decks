@@ -1,4 +1,4 @@
-## Terraform workflow (1)
+Terraform workflow (1)
 
 1.    - Write Terraform code/configuration file
       - Initialize Terraform working directory→terraform init
